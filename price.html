@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    STROY <img src="./img/header-logo.png" alt="" />
+                </a>
+            </div>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="price.html">Цены</a>
+                    </li>
+                    <li class="header__list-item"><a href="">Блог</a></li>
+                </ul>
+                <a href="#form" class="header__menu-button">Обратная связь</a>
+                <a href="#form" class="header__menu-button-fixed"></a>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="container">
+                <section class="price">
+                    <h1 class="title price-title">
+                        Есть предложение для любой вёрстки и фронтенда
+                    </h1>
+                    <div class="price__items">
+                        <div class="price__item">
+                            <div class="price__item-title">
+                                Малая<br />
+                                Лига
+                            </div>
+                            <div class="proce__block">
+                                <div class="price__item-list">
+                                    <ul>
+                                        <li>Простая вёрстка любого объёма</li>
+                                        <li>
+                                            HTML, CSS, JavaScript, Gulp, SCSS
+                                        </li>
+                                        <li>
+                                            Если готов адаптив, нет сложного
+                                            функционала и анимаций, не нужна
+                                            экспертиза или не горят сроки.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__item-rate">
+                                    <div class="price__item-rate__block">
+                                        <div class="price__item-rate__title">
+                                            750 р/час
+                                        </div>
+                                        <div class="price__item-rate__desc">
+                                            стандартный тариф, сроки реализации
+                                            увеличены на 30%
+                                        </div>
+                                    </div>
+                                    <div class="price__item-rate__block">
+                                        <div class="price__item-rate__title">
+                                            950 р/час
+                                        </div>
+                                        <div class="price__item-rate__desc">
+                                            тариф реактивная ракета, нормальные
+                                            сроки реализации
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__items">
+                        <div class="price__item">
+                            <div class="price__item-title">
+                                Большая <br />
+                                Лига
+                            </div>
+                            <div class="proce__block">
+                                <div class="price__item-list">
+                                    <ul>
+                                        <li>Сложная вёрстка любого объёма.</li>
+                                        <li>
+                                            HTML, CSS, JavaScript, Gulp, SCSS,
+                                            анимации, валидация.
+                                        </li>
+                                        <li>
+                                            Сложные интерфейсы с большим
+                                            количества анимаций или интерактива.
+                                            Когда необходимо додумать за
+                                            дизайнеров, придумать адаптив или
+                                            поделиться экспертизой.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__item-rate">
+                                    <div class="price__item-rate__block">
+                                        <div class="price__item-rate__title">
+                                            1100 р/час
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__items">
+                        <div class="price__item">
+                            <div class="price__item-title">
+                                Лига<br />
+                                Фронтенда
+                            </div>
+                            <div class="proce__block">
+                                <div class="price__item-list">
+                                    <ul>
+                                        <li>Приложения на React.js</li>
+                                        <li>
+                                            React.js, Next.js, Redux, Webpack
+                                        </li>
+                                        <li>
+                                            Если нужно сделать SPA любой
+                                            сложности, связать всё это с данными
+                                            и собрать готовый продукт. Так же
+                                            как и в Большой Лиге, додумаем
+                                            адаптив, поделимся экспертизой и
+                                            поправим за дизайнерами.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__item-rate">
+                                    <div class="price__item-rate__block">
+                                        <div class="price__item-rate__title">
+                                            1300-1500 р/час
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer__block">
+                    <div class="footer__form">
+                        <form
+                            class="form"
+                            id="form"
+                            method="POST"
+                            data-netlify="true"
+                        >
+                            <label for="email">Emal*</label>
+                            <input
+                                name="email"
+                                type="email"
+                                placeholder="Введите свой Email"
+                                required
+                            />
+
+                            <label for="name">Имя*</label>
+                            <input
+                                name="name"
+                                type="name"
+                                placeholder="Введите свое Имя"
+                                required
+                            />
+
+                            <label for="text">Cообщение*</label>
+                            <textarea
+                                name="text"
+                                rows="10"
+                                required="required"
+                            ></textarea>
+                            <input type="submit" value="Связать с нами" />
+                        </form>
+                    </div>
+                    <div class="footer__feedback">
+                        <div class="feedback__items">
+                            <div class="feedback__item">
+                                <div class="feedback__item-title">
+                                    Любите писать с личной почты?
+                                </div>
+                                <div class="feedback__item-desc">
+                                    Пишите на
+                                    <a class="feedbacl-link" href="mailto"
+                                        >dark4506@yandex.ru</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <div class="feedback__item-title">
+                                    Любите звонить?
+                                </div>
+                                <div class="feedback__item-desc">
+                                    Звоните на<a
+                                        class="feedbacl-link"
+                                        href="tel"
+                                    >
+                                        +7(999)610-97-71</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <div class="feedback__item-title">
+                                    Хотите обсудить партнёрство?
+                                </div>
+                                <div class="feedback__item-desc">
+                                    Пишите на
+                                    <a class="feedbacl-link" href="mailto"
+                                        >helloelio@gmail.com</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
