@@ -1,9 +1,15 @@
 // плавная прокрутка к якорям
+
+// переменная яокери
 const anchors = document.querySelectorAll('a[href*="#"]');
+
+// цикл всех якорей
 for (let anchor of anchors) {
+    // добавление события клик
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const blockID = anchor.getAttribute('href').substr(1);
+
         document.getElementById(blockID).scrollIntoView({
             behavior: 'smooth',
             block: 'start',
@@ -29,17 +35,3 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-scrollbar',
     },
 });
-// Отправка сообщений
-document.querySelector('form').addEventListener('submit', handleSubmit);
-const handleSubmit = (e) => {
-    e.preventDefault();
-    let myForm = document.getElementById('form');
-    let formData = new FormData(myForm);
-    fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-    })
-        .then(() => console.log('Form successfully submitted'))
-        .catch((error) => alert(error));
-};
